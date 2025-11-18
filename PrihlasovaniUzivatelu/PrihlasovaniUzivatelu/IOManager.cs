@@ -13,8 +13,7 @@ namespace PrihlasovaniUzivatelu
 {
     internal class IOManager
     {
-
-        public static string filePath = "users.json";
+        public static string filePath = Path.Combine(AppContext.BaseDirectory, "users.json");
 
         public static void JsonConverterReg(RegisteredUser user)
         {
