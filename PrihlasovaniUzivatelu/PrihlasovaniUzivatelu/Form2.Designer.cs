@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             pictureSlot1 = new PictureBox();
             pictureSlot2 = new PictureBox();
             pictureSlot3 = new PictureBox();
@@ -37,6 +38,7 @@
             JustTextTextbox2 = new TextBox();
             Investment = new TextBox();
             GambleVýsledek = new TextBox();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureSlot1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureSlot2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureSlot3).BeginInit();
@@ -131,11 +133,23 @@
             GambleVýsledek.TabIndex = 8;
             GambleVýsledek.TextAlign = HorizontalAlignment.Center;
             // 
+            // button1
+            // 
+            button1.Location = new Point(12, 402);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 9;
+            button1.Text = "Mine";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(GambleVýsledek);
             Controls.Add(Investment);
             Controls.Add(JustTextTextbox2);
@@ -166,5 +180,6 @@
         private TextBox JustTextTextbox2;
         private TextBox Investment;
         private TextBox GambleVýsledek;
+        private Button button1;
     }
 }

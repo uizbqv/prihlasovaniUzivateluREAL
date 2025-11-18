@@ -33,6 +33,7 @@ namespace PrihlasovaniUzivatelu
         {
 
         }
+
         private Image Picturegiver(int multiS)
         {
             //Case na rozdělování těch obrázků
@@ -141,6 +142,10 @@ namespace PrihlasovaniUzivatelu
 
         }
 
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Mining mine = new Mining();
+            mine.Show();
+        }
     }
 }
