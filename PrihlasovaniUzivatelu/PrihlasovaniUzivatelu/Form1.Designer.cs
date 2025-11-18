@@ -43,7 +43,6 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = PrishlasovaniUzivateluReal.Properties.Resources._13_02_27_spielbank_wiesbaden_by_RalfR_093;
             pictureBox1.Location = new Point(275, 14);
             pictureBox1.Margin = new Padding(4, 3, 4, 3);
             pictureBox1.Name = "pictureBox1";
