@@ -43,12 +43,11 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources._13_02_27_spielbank_wiesbaden_by_RalfR_093;
-            pictureBox1.Location = new Point(275, 14);
+            pictureBox1.Image = Properties.Resources.logo;
+            pictureBox1.Location = new Point(257, 50);
             pictureBox1.Margin = new Padding(4, 3, 4, 3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(455, 252);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.Size = new Size(477, 77);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
