@@ -41,16 +41,17 @@
             button1.TabIndex = 0;
             button1.Text = "MINE";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
             // 
             // Mining
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImage = Properties.Resources.Stone;
             ClientSize = new Size(800, 450);
             Controls.Add(button1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Mining";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Mining";
             Load += Mining_Load;
             ResumeLayout(false);

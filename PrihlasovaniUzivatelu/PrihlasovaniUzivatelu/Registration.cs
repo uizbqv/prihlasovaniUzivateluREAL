@@ -21,6 +21,7 @@ namespace PrihlasovaniUzivatelu
             passwordBOX.PasswordChar = '*';
             passwordAgainBOX.Text = "";
             passwordAgainBOX.PasswordChar = '*';
+            this.AcceptButton = registerBUTTON;
         }
 
         private void registerBUTTON_Click(object sender, EventArgs e)
@@ -31,6 +32,10 @@ namespace PrihlasovaniUzivatelu
             //UserManager.Registration(usernameREG, passwordREG, passwordAgainREG);
             UserManager um = new UserManager(dontMatchLABEL);
             um.Registration(usernameREG, passwordREG, passwordAgainREG);
+            this.Close();
+            Form1? f1 = (Form1?)Application.OpenForms["Form1"];
+            f1.WindowState = FormWindowState.Normal;
+
         }
     }
 }

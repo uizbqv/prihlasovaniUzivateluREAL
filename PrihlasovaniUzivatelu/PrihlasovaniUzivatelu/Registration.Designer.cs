@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registration));
             label4 = new Label();
             passwordAgainBOX = new TextBox();
             label3 = new Label();
@@ -92,7 +93,7 @@
             label1.Location = new Point(407, 38);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(91, 15);
+            label1.Size = new Size(92, 15);
             label1.TabIndex = 8;
             label1.Text = "REGISTER NOW ";
             // 
@@ -130,6 +131,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.Background;
             ClientSize = new Size(933, 519);
             Controls.Add(dontMatchLABEL);
             Controls.Add(registerBUTTON);
@@ -140,8 +142,10 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(usernameBOX);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4, 3, 4, 3);
             Name = "Registration";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Registrace";
             ResumeLayout(false);
             PerformLayout();

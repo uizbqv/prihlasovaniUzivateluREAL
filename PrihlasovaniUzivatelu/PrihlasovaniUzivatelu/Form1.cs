@@ -48,6 +48,7 @@ namespace PrihlasovaniUzivatelu
         {
             Registration r = new Registration();
             r.Show();
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }
