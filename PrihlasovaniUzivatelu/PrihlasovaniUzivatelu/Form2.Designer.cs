@@ -82,7 +82,7 @@
             // 
             // NumberOfFunds
             // 
-            NumberOfFunds.Font = new Font("Times New Roman", 14.25F);
+            NumberOfFunds.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             NumberOfFunds.Location = new Point(12, 309);
             NumberOfFunds.Name = "NumberOfFunds";
             NumberOfFunds.ReadOnly = true;
@@ -92,7 +92,7 @@
             // 
             // JustTextTextbox1
             // 
-            JustTextTextbox1.Font = new Font("Times New Roman", 18F, FontStyle.Bold);
+            JustTextTextbox1.Font = new Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point);
             JustTextTextbox1.Location = new Point(12, 268);
             JustTextTextbox1.Name = "JustTextTextbox1";
             JustTextTextbox1.ReadOnly = true;
@@ -102,7 +102,7 @@
             // 
             // JustTextTextbox2
             // 
-            JustTextTextbox2.Font = new Font("Times New Roman", 18F, FontStyle.Bold);
+            JustTextTextbox2.Font = new Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point);
             JustTextTextbox2.Location = new Point(659, 268);
             JustTextTextbox2.Name = "JustTextTextbox2";
             JustTextTextbox2.ReadOnly = true;
@@ -112,7 +112,7 @@
             // 
             // Investment
             // 
-            Investment.Font = new Font("Times New Roman", 14.25F);
+            Investment.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             Investment.Location = new Point(659, 315);
             Investment.Name = "Investment";
             Investment.Size = new Size(128, 29);
@@ -123,7 +123,7 @@
             // 
             // GambleVýsledek
             // 
-            GambleVýsledek.Font = new Font("Times New Roman", 18F, FontStyle.Bold);
+            GambleVýsledek.Font = new Font("Times New Roman", 18F, FontStyle.Bold, GraphicsUnit.Point);
             GambleVýsledek.Location = new Point(229, 102);
             GambleVýsledek.Name = "GambleVýsledek";
             GambleVýsledek.ReadOnly = true;
