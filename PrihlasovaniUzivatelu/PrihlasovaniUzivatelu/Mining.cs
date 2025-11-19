@@ -15,7 +15,7 @@ namespace PrihlasovaniUzivatelu
         public Mining()
         {
             InitializeComponent();
-            this.Cursor = new Cursor(new MemoryStream(Properties.Resources.myCursor));
+            this.Cursor = new Cursor(new MemoryStream(Properties.Resources.myCursor2));
         }
 
 

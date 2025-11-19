@@ -49,6 +49,7 @@
             BackgroundImage = Properties.Resources.Stone;
             ClientSize = new Size(800, 450);
             Controls.Add(button1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Mining";
             StartPosition = FormStartPosition.CenterScreen;

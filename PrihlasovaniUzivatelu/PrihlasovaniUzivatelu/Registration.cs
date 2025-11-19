@@ -16,12 +16,12 @@ namespace PrihlasovaniUzivatelu
         public Registration()
         {
             InitializeComponent();
-            dontMatchLABEL.Visible = false;
+            dontMatchLABEL.Visible = false; //nastavi text "passwords don't match" na neviditelny :3
             passwordBOX.Text = "";
-            passwordBOX.PasswordChar = '*';
+            passwordBOX.PasswordChar = '*'; //nebudou videt pismena pri psani ale *
             passwordAgainBOX.Text = "";
             passwordAgainBOX.PasswordChar = '*';
-            this.AcceptButton = registerBUTTON;
+            this.AcceptButton = registerBUTTON; //kdyz se zmackne enter kdekoli tak to zmackne register tlacitko
         }
 
         private void registerBUTTON_Click(object sender, EventArgs e)
