@@ -37,9 +37,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(622, 338);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "AdminScreen";
-            Text = "Form2";
+            Text = "Shush, don't show this to anyone else....";
             Load += AdminScreen_Load;
             ResumeLayout(false);
         }

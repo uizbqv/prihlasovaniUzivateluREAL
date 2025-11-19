@@ -146,7 +146,7 @@
             Margin = new Padding(4, 3, 4, 3);
             Name = "Registration";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Registrace";
+            Text = "Registration";
             ResumeLayout(false);
             PerformLayout();
         }

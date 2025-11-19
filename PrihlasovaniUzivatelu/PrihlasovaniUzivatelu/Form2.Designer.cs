@@ -162,7 +162,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form2";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form2";
+            Text = "Good luck!";
             Load += Form2_Load;
             ((System.ComponentModel.ISupportInitialize)pictureSlot1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureSlot2).EndInit();

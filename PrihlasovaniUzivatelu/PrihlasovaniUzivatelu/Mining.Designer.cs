@@ -52,7 +52,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Mining";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Mining";
+            Text = "Keep on mining!!";
             Load += Mining_Load;
             ResumeLayout(false);
         }
