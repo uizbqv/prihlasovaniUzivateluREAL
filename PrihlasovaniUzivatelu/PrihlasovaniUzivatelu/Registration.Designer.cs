@@ -39,6 +39,8 @@
             registerBUTTON = new Button();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             dontMatchLABEL = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label4
@@ -127,12 +129,26 @@
             dontMatchLABEL.Text = "Passwords don't match";
             dontMatchLABEL.Visible = false;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Cursor = Cursors.Hand;
+            pictureBox1.Image = Properties.Resources.backButton;
+            pictureBox1.Location = new Point(25, 23);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(91, 30);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 16;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
             // Registration
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Background;
             ClientSize = new Size(933, 519);
+            Controls.Add(pictureBox1);
             Controls.Add(dontMatchLABEL);
             Controls.Add(registerBUTTON);
             Controls.Add(label4);
@@ -147,6 +163,7 @@
             Name = "Registration";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Registration";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -163,5 +180,6 @@
         private Button registerBUTTON;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Label dontMatchLABEL;
+        private PictureBox pictureBox1;
     }
 }

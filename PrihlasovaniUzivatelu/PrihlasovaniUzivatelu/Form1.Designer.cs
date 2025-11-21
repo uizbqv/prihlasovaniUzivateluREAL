@@ -39,6 +39,7 @@
             registerLABEL = new Label();
             logInBUTTON1 = new Button();
             button1 = new Button();
+            userDoesNotExistLABEL = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -143,6 +144,16 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // userDoesNotExistLABEL
+            // 
+            userDoesNotExistLABEL.AutoSize = true;
+            userDoesNotExistLABEL.ForeColor = Color.Red;
+            userDoesNotExistLABEL.Location = new Point(587, 314);
+            userDoesNotExistLABEL.Name = "userDoesNotExistLABEL";
+            userDoesNotExistLABEL.Size = new Size(105, 15);
+            userDoesNotExistLABEL.TabIndex = 10;
+            userDoesNotExistLABEL.Text = "User does not exist";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -150,6 +161,7 @@
             BackColor = Color.DarkGreen;
             BackgroundImage = Properties.Resources.Background;
             ClientSize = new Size(990, 522);
+            Controls.Add(userDoesNotExistLABEL);
             Controls.Add(button1);
             Controls.Add(logInBUTTON1);
             Controls.Add(registerLABEL);
@@ -183,6 +195,7 @@
         private Label registerLABEL;
         private Button logInBUTTON1;
         private Button button1;
+        private Label userDoesNotExistLABEL;
     }
 }
 

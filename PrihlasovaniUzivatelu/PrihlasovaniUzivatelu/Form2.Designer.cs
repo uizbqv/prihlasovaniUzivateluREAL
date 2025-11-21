@@ -70,7 +70,6 @@
             pictureSlot3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureSlot3.TabIndex = 2;
             pictureSlot3.TabStop = false;
-            pictureSlot3.Click += pictureSlot3_Click;
             // 
             // RerollButton
             // 
@@ -121,7 +120,6 @@
             Investment.TabIndex = 7;
             Investment.Text = "0";
             Investment.TextAlign = HorizontalAlignment.Right;
-            Investment.TextChanged += Investment_TextChanged;
             // 
             // GambleVýsledek
             // 

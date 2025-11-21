@@ -16,9 +16,11 @@ namespace PrihlasovaniUzivatelu
         public Form1()
         {
             InitializeComponent();
+            userDoesNotExistLABEL.Visible = false;
             passwordBOX1.Text = "";
             // The password character is an asterisk.
-            passwordBOX1.PasswordChar = '*';
+            passwordBOX1.PasswordChar = '■';
+            this.AcceptButton = logInBUTTON1;
         }
 
         private void Form1_Load(object sender, EventArgs e)

@@ -18,9 +18,9 @@ namespace PrihlasovaniUzivatelu
             InitializeComponent();
             dontMatchLABEL.Visible = false; //nastavi text "passwords don't match" na neviditelny :3
             passwordBOX.Text = "";
-            passwordBOX.PasswordChar = '*'; //nebudou videt pismena pri psani ale *
+            passwordBOX.PasswordChar = '■'; //nebudou videt pismena pri psani ale *
             passwordAgainBOX.Text = "";
-            passwordAgainBOX.PasswordChar = '*';
+            passwordAgainBOX.PasswordChar = '■';
             this.AcceptButton = registerBUTTON; //kdyz se zmackne enter kdekoli tak to zmackne register tlacitko
         }
 
@@ -29,6 +29,11 @@ namespace PrihlasovaniUzivatelu
             string usernameREG = usernameBOX.Text;
             string passwordREG = passwordBOX.Text;
             string passwordAgainREG = passwordAgainBOX.Text;
+            if (string.IsNullOrWhiteSpace(usernameREG) || string.IsNullOrWhiteSpace(passwordREG) || string.IsNullOrWhiteSpace(passwordAgainREG))
+            {
+                MessageBox.Show("Please fill in all boxes!");
+                return;
+            }
             //UserManager.Registration(usernameREG, passwordREG, passwordAgainREG);
             UserManager um = new UserManager(dontMatchLABEL);
             um.Registration(usernameREG, passwordREG, passwordAgainREG);
@@ -36,6 +41,13 @@ namespace PrihlasovaniUzivatelu
             Form1? f1 = (Form1?)Application.OpenForms["Form1"];
             f1.WindowState = FormWindowState.Normal;
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form1? f1 = (Form1?)Application.OpenForms["Form1"];
+            f1.WindowState = FormWindowState.Normal;
         }
     }
 }

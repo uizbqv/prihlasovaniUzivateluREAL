@@ -34,7 +34,7 @@ namespace PrihlasovaniUzivatelu
 
         }
 
-        private Image Picturegiver(int multiS)
+        private Image PictureGiver(int multiS)
         {
             //Case na rozdělování těch obrázků
             switch (multiS)
@@ -88,9 +88,9 @@ namespace PrihlasovaniUzivatelu
             S3 = rdm3.Next(1, 5);
 
             //Udělá to že dává pictureboxům obrázky podle toho co vygeneruje random (přes tu metodu picturegiver)
-            pictureSlot1.Image = Picturegiver(S1);
-            pictureSlot2.Image = Picturegiver(S2);
-            pictureSlot3.Image = Picturegiver(S3);
+            pictureSlot1.Image = PictureGiver(S1);
+            pictureSlot2.Image = PictureGiver(S2);
+            pictureSlot3.Image = PictureGiver(S3);
 
             //Gamblení výhry a prohry
             GambleOutcome();
@@ -129,16 +129,6 @@ namespace PrihlasovaniUzivatelu
                 //Loss (nemumíš gamblit :PPP)
                 GambleVýsledek.Text = "You lost " + investment.ToString() + " Dollars!";
             }
-
-        }
-
-        private void Investment_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureSlot3_Click(object sender, EventArgs e)
-        {
 
         }
 
