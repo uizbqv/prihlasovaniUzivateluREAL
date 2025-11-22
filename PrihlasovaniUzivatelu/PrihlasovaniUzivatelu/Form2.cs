@@ -65,13 +65,13 @@ namespace PrihlasovaniUzivatelu
             //Kontrola proti blbům
             if (investment <= 0)
             {
-                MessageBox.Show("You cant gamble if you dont invest anything!");
+                MessageBox.Show("You can't gamble if you dont invest anything!");
                 return;
             }
 
             if (investment > balance)
             {
-                MessageBox.Show("You cant gamble more than you have!");
+                MessageBox.Show("You can't gamble more than you have!");
                 return;
             }
 

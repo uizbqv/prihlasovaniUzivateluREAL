@@ -41,6 +41,8 @@ namespace PrihlasovaniUzivatelu
             if (correct)
             {
                 MessageBox.Show("Login successful!"); //zatim jen vypise ze hesla jsou shodna a vyhrali jsme
+                
+                //tady pak bude neco jako if(username == "admin" a tam pak udelas nejakou akci kotě :3)
             }
             else
             {
@@ -62,7 +64,7 @@ namespace PrihlasovaniUzivatelu
                 DateTime registrationTime = GetRegistrationDate();
                 //vytvori noveho uzivatele
                 RegisteredUser user = new RegisteredUser(username, hashedPassword, registrationTime);
-                IOManager.JsonConverterReg(user); //zapise do jsonu
+                IOManager.JsonConverterReg(user); //posle uzivatele k zapsani do jsonu
             }
             else
             {

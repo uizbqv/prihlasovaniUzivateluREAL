@@ -34,11 +34,10 @@ namespace PrihlasovaniUzivatelu
                 MessageBox.Show("Please fill in all boxes!");
                 return;
             }
-            //UserManager.Registration(usernameREG, passwordREG, passwordAgainREG);
             UserManager um = new UserManager(dontMatchLABEL);
             um.Registration(usernameREG, passwordREG, passwordAgainREG);
             this.Close();
-            Form1? f1 = (Form1?)Application.OpenForms["Form1"];
+            Form1? f1 = (Form1?)Application.OpenForms["Form1"]; //Application.OpenForms hledá všechny forms co jsou ted otevreny, ["Form1"] hleda presne form1
             f1.WindowState = FormWindowState.Normal;
 
         }
