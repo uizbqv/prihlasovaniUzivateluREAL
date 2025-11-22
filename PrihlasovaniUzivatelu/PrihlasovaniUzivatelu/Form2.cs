@@ -65,19 +65,19 @@ namespace PrihlasovaniUzivatelu
             //Kontrola proti blbům
             if (investment <= 0)
             {
-                MessageBox.Show("You can't gamble if you don't invest anything!");
+                MessageBox.Show("You cant gamble if you dont invest anything!");
                 return;
             }
 
             if (investment > balance)
             {
-                MessageBox.Show("You can't gamble more than you have!");
+                MessageBox.Show("You cant gamble more than you have!");
                 return;
             }
 
             if (balance <= 0)
             {
-                MessageBox.Show("You got no money (restart the game and play again)");
+                MessageBox.Show("You got no money (Go mine for us boy)");
                 return;
             }
 
@@ -131,11 +131,20 @@ namespace PrihlasovaniUzivatelu
             }
 
         }
-
+        //Metoda která bude přidávat balance z mininění
+        public void addBalance(double amount)
+        {
+            balance += amount;
+            NumberOfFunds.Text = balance.ToString();
+        }
+        //Tlačítko pro otevření mininění
         private void button1_Click(object sender, EventArgs e)
         {
-            Mining mine = new Mining();
+            //Otevře to mining plus to tomu předá tu metodu pro přidávání money :P
+            Mining mine = new Mining(addBalance);
             mine.Show();
+            MessageBox.Show("Craftsino will only take 99% of all emerald value you will mine (leaving you with 10 coins for each mine)");
+       
         }
     }
 }
