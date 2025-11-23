@@ -34,6 +34,11 @@ namespace PrihlasovaniUzivatelu
                 MessageBox.Show("Please fill in all boxes!");
                 return;
             }
+            if (usernameREG.Equals("admin", StringComparison.OrdinalIgnoreCase)) //zjisti jestli jmeno neni admin + ignoruje velikost pismen pomoci StringComparison.OrdinalIgnoreCase
+            {
+                MessageBox.Show("Your password can't be \"admin\"!");
+                return;
+            }
             UserManager um = new UserManager(dontMatchLABEL);
             um.Registration(usernameREG, passwordREG, passwordAgainREG);
             this.Close();
