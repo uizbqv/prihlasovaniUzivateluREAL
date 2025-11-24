@@ -148,6 +148,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Background;
             ClientSize = new Size(933, 519);
+            ControlBox = false;
             Controls.Add(pictureBox1);
             Controls.Add(dontMatchLABEL);
             Controls.Add(registerBUTTON);
@@ -160,6 +161,8 @@
             Controls.Add(usernameBOX);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "Registration";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Registration";
