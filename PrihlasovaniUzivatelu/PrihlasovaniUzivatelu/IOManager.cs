@@ -19,7 +19,12 @@ namespace PrihlasovaniUzivatelu
         public static void JsonConverterReg(RegisteredUser user)
         {
             List<RegisteredUser> users = new();
-            JsonSerializerOptions options = new JsonSerializerOptions { Encoder = System.Text.Encodings.Web.JavaScriptEncoder.Create(System.Text.Unicode.UnicodeRanges.All) };
+
+            JsonSerializerOptions options = new JsonSerializerOptions
+            {
+                Encoder = System.Text.Encodings.Web.JavaScriptEncoder.Create(System.Text.Unicode.UnicodeRanges.All),
+                WriteIndented = true
+            };
 
             if (File.Exists(filePath) && new FileInfo(filePath).Length > 0)
             {
@@ -34,7 +39,7 @@ namespace PrihlasovaniUzivatelu
             users.Add(user);
 
           
-            string json = JsonSerializer.Serialize(users, new JsonSerializerOptions { WriteIndented = true });
+            string json = JsonSerializer.Serialize(users,options);
             File.WriteAllText(filePath, json);
         }
 
