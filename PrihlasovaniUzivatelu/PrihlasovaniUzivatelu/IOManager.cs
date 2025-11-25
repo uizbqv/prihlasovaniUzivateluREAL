@@ -13,17 +13,18 @@ namespace PrihlasovaniUzivatelu
 {
     internal class IOManager
     {
+        
         public static string filePath = Path.GetFullPath (Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\users.json") );
 
         public static void JsonConverterReg(RegisteredUser user)
         {
             List<RegisteredUser> users = new();
+            JsonSerializerOptions options = new JsonSerializerOptions { Encoder = System.Text.Encodings.Web.JavaScriptEncoder.Create(System.Text.Unicode.UnicodeRanges.All) };
 
-         
             if (File.Exists(filePath) && new FileInfo(filePath).Length > 0)
             {
                 string existingJson = File.ReadAllText(filePath);
-                var loadedUsers = JsonSerializer.Deserialize<List<RegisteredUser>>(existingJson);
+                var loadedUsers = JsonSerializer.Deserialize<List<RegisteredUser>>(existingJson, options);
 
                 if (loadedUsers != null)
                     users = loadedUsers;
