@@ -34,6 +34,7 @@ namespace PrihlasovaniUzivatelu
             string username = usernameBOX1.Text;
             string password = passwordBOX1.Text;
             UserManager.LogIn(username, password);
+            
         }
         private void registerLABEL_Click(object sender, EventArgs e)
         {

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,7 @@ namespace PrihlasovaniUzivatelu
             string username = _username;
             string password = _password;
             ActionManager honza = new ActionManager(_username);
+            ActionManager.Deciding(username);
             //zkontroluje, jestli jsou username i password vyplneny
             if (string.IsNullOrWhiteSpace(_username) || string.IsNullOrWhiteSpace(_password))
             {
@@ -41,9 +43,8 @@ namespace PrihlasovaniUzivatelu
 
             if (correct)
             {
-                MessageBox.Show("Login successful!"); //zatim jen vypise ze hesla jsou shodna a vyhrali jsme
-                
-                //tady pak bude neco jako if(username == "admin" a tam pak udelas nejakou akci kotě :3)
+                Form1? f1 = (Form1?)Application.OpenForms["Form1"];
+                f1.WindowState = FormWindowState.Normal;
             }
             else
             {

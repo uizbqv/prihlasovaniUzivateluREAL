@@ -13,9 +13,9 @@ namespace PrihlasovaniUzivatelu
        {
             _Username = Username;
        }
-       public void Deciding()
+       public static void Deciding(string _username)
        {
-            if (Username == "admin")
+            if (_username == "admin")
             {
                 AdminScreen admin = new AdminScreen();
                 admin.Show();
