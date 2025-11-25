@@ -16,7 +16,6 @@ namespace PrihlasovaniUzivatelu
         public Form1()
         {
             InitializeComponent();
-            userDoesNotExistLABEL.Visible = false;
             passwordBOX1.Text = "";
             passwordBOX1.PasswordChar = '■'; //nastavi aby heslo nebylo videt
             this.AcceptButton = logInBUTTON1;
