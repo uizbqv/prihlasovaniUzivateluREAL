@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -41,9 +42,7 @@ namespace PrihlasovaniUzivatelu
 
             if (correct)
             {
-                MessageBox.Show("Login successful!"); //zatim jen vypise ze hesla jsou shodna a vyhrali jsme
-                
-                //tady pak bude neco jako if(username == "admin" a tam pak udelas nejakou akci kotě :3)
+                ActionManager.Deciding(_username);
             }
             else
             {
