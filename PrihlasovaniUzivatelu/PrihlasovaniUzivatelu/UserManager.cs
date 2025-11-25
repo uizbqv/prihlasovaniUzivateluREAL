@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -42,9 +41,15 @@ namespace PrihlasovaniUzivatelu
 
             if (correct)
             {
+<<<<<<< HEAD
                 ActionManager.Deciding(_username);
                 Form1? f1 = (Form1?)Application.OpenForms["Form1"];
                 f1.Hide();
+=======
+                MessageBox.Show("Login successful!"); //zatim jen vypise ze hesla jsou shodna a vyhrali jsme
+                
+                //tady pak bude neco jako if(username == "admin" a tam pak udelas nejakou akci kotě :3)
+>>>>>>> parent of 2060e5e (Merge branch 'main' of https://github.com/uizbqv/prihlasovaniUzivateluREAL)
             }
             else
             {
