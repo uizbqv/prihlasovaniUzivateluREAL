@@ -19,6 +19,7 @@ namespace PrihlasovaniUzivatelu
             passwordBOX1.Text = "";
             passwordBOX1.PasswordChar = '■'; //nastavi aby heslo nebylo videt
             this.AcceptButton = logInBUTTON1;
+
         }
 
         private void Form1_Load(object sender, EventArgs e)

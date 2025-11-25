@@ -22,6 +22,7 @@ namespace PrihlasovaniUzivatelu
             //ziskani promennych
             string username = _username;
             string password = _password;
+            ActionManager honza = new ActionManager(_username);
             //zkontroluje, jestli jsou username i password vyplneny
             if (string.IsNullOrWhiteSpace(_username) || string.IsNullOrWhiteSpace(_password))
             {
