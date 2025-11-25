@@ -18,7 +18,7 @@ namespace PrihlasovaniUzivatelu
         }
 
 
-        public static void LogIn(string _username, string _password)
+        public static async Task LogIn(string _username, string _password)
         {
             //ziskani promennych
             string username = _username;
@@ -43,11 +43,15 @@ namespace PrihlasovaniUzivatelu
             if (correct)
             {
                 ActionManager.Deciding(_username);
+                Form1? f1 = (Form1?)Application.OpenForms["Form1"];
+                f1.Hide();
             }
             else
             {
-                MessageBox.Show("Wrong password!"); //zatim vypise ze jsi kokot :3
+                MessageBox.Show("Wrong password!");
+                return;
             }
+
 
 
 
