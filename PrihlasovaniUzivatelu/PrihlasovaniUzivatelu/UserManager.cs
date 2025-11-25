@@ -103,7 +103,7 @@ namespace PrihlasovaniUzivatelu
 
 
         }
-        public static bool VerifyPassword(string _password, string _hash) //metoda nic neodkryptovává, jen znova vypocitava a porovnava hashe
+        public static bool VerifyPassword(string _password, string _hash) //metoda nic neodkryptovává, jen znova vypocitava a porovnava znova zahashovane heslo s ulozenym zahashovanym heslem
         {
             const int keySize = 32;
             const int iterations = 100000;
