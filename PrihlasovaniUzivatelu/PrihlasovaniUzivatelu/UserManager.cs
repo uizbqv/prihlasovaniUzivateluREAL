@@ -24,7 +24,6 @@ namespace PrihlasovaniUzivatelu
             string username = _username;
             string password = _password;
             ActionManager honza = new ActionManager(_username);
-            ActionManager.Deciding(username);
             //zkontroluje, jestli jsou username i password vyplneny
             if (string.IsNullOrWhiteSpace(_username) || string.IsNullOrWhiteSpace(_password))
             {
@@ -43,8 +42,7 @@ namespace PrihlasovaniUzivatelu
 
             if (correct)
             {
-                Form1? f1 = (Form1?)Application.OpenForms["Form1"];
-                f1.WindowState = FormWindowState.Normal;
+                ActionManager.Deciding(_username);
             }
             else
             {
