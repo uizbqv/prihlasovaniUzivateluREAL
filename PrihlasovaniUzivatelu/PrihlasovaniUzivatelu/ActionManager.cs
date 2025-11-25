@@ -13,6 +13,21 @@ namespace PrihlasovaniUzivatelu
        {
             _Username = Username;
        }
+       public void Deciding()
+       {
+            if (Username == "admin")
+            {
+                AdminScreen admin = new AdminScreen();
+                admin.Show();
+            }
+            else
+            {
+                Form2 f2 = new Form2();
+                f2.Show();
+            }
+       }
+      
+
       
         
     }
