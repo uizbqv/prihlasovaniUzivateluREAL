@@ -41,9 +41,9 @@ namespace PrihlasovaniUzivatelu
 
             if (correct)
             {
-                MessageBox.Show("Login successful!"); //zatim jen vypise ze hesla jsou shodna a vyhrali jsme
-                
-                //tady pak bude neco jako if(username == "admin" a tam pak udelas nejakou akci kotě :3)
+                ActionManager.Deciding(username);
+                Form1? f1 = (Form1?)Application.OpenForms["Form1"];
+                f1.Hide();
             }
             else
             {

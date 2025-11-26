@@ -36,12 +36,6 @@ namespace PrihlasovaniUzivatelu
             UserManager.LogIn(username, password);
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            Form2 f2 = new Form2();
-            f2.Show();
-        }
 
         private void registerLABEL_Click(object sender, EventArgs e)
         {
@@ -50,5 +44,6 @@ namespace PrihlasovaniUzivatelu
             this.WindowState = FormWindowState.Minimized;
 
         }
+
     }
 }

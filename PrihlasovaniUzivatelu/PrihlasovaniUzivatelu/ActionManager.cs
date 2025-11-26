@@ -14,16 +14,18 @@ namespace PrihlasovaniUzivatelu
             _Username = Username;
        }
 
-       public static void AdminAction(string _Username)
-       {
-            AdminScreen admin = new AdminScreen();
-            admin.Show();
-       }
-
-        public static void basicUserAction(string _Username)
+        public static void Deciding(string _username)
         {
-            Form2 f2 = new Form2();
-            f2.Show();
+            if (_username == "admin")
+            {
+                AdminScreen admin = new AdminScreen();
+                admin.Show();
+            }
+            else
+            {
+                Form2 f2 = new Form2();
+                f2.Show();
+            }
         }
 
 
