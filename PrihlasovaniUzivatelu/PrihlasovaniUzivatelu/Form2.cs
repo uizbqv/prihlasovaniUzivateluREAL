@@ -106,7 +106,7 @@ namespace PrihlasovaniUzivatelu
             if (S1 == S2 && S2 == S3)
             {
                 //WIN!!!!
-                double win = investment * 2;
+                double win = investment * 4;
 
                 balance += win;
                 NumberOfFunds.Text = balance.ToString();

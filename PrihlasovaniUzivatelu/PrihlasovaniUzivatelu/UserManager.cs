@@ -44,6 +44,7 @@ namespace PrihlasovaniUzivatelu
                 ActionManager.Deciding(username);
                 Form1? f1 = (Form1?)Application.OpenForms["Form1"];
                 f1.Hide();
+                
             }
             else
             {
