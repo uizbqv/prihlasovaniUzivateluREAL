@@ -35,5 +35,10 @@ namespace PrihlasovaniUzivatelu
                 UsersListBox.Items.Add(user.username);
             }
         }
+
+        private void UsersListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

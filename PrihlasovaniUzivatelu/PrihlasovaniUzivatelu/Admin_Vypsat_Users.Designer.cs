@@ -35,9 +35,9 @@
             // button1
             // 
             button1.Font = new Font("Times New Roman", 18F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            button1.Location = new Point(329, 388);
+            button1.Location = new Point(350, 388);
             button1.Name = "button1";
-            button1.Size = new Size(138, 50);
+            button1.Size = new Size(151, 50);
             button1.TabIndex = 0;
             button1.Text = "Show users";
             button1.UseVisualStyleBackColor = true;
@@ -47,15 +47,18 @@
             // 
             UsersListBox.FormattingEnabled = true;
             UsersListBox.ItemHeight = 15;
-            UsersListBox.Location = new Point(103, 111);
+            UsersListBox.Location = new Point(195, 111);
             UsersListBox.Name = "UsersListBox";
-            UsersListBox.Size = new Size(607, 244);
+            UsersListBox.Size = new Size(457, 259);
             UsersListBox.TabIndex = 2;
+            UsersListBox.SelectedIndexChanged += UsersListBox_SelectedIndexChanged;
             // 
             // Admin_Vypsat_Users
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.Commands;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
             Controls.Add(UsersListBox);
             Controls.Add(button1);
