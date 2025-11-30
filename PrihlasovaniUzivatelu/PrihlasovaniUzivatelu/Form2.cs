@@ -82,10 +82,10 @@ namespace PrihlasovaniUzivatelu
             }
 
 
-            //S* znamená Slot takže Slot 1 až 3
-            S1 = rdm1.Next(1, 5);
-            S2 = rdm2.Next(1, 5);
-            S3 = rdm3.Next(1, 5);
+            //S* znamená Slot takže Slot 1 až 3 dá čílo pro obrázek
+            S1 = rdm1.Next(1, 6);
+            S2 = rdm2.Next(1, 6);
+            S3 = rdm3.Next(1, 6);
 
             //Udělá to že dává pictureboxům obrázky podle toho co vygeneruje random (přes tu metodu picturegiver)
             pictureSlot1.Image = PictureGiver(S1);
