@@ -66,7 +66,7 @@ namespace PrihlasovaniUzivatelu
                 DateTime registrationTime = GetRegistrationDate();
                 //vytvori noveho uzivatele
                 RegisteredUser user = new RegisteredUser(username, hashedPassword, registrationTime);
-                IOManager.JsonConverterReg(user); //posle uzivatele k zapsani do jsonu
+                IOManager.JsonConverterReg(user); //posle uzivatele k zapsani do 
             }
             else
             {
