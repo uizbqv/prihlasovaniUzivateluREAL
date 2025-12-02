@@ -86,15 +86,14 @@
             // 
             // NumberOfFunds
             // 
-<<<<<<< Updated upstream
+
             NumberOfFunds.Font = new Font("Times New Roman", 14.25F);
-=======
-<<<<<<< HEAD
+
             NumberOfFunds.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
-=======
+
             NumberOfFunds.Font = new Font("Times New Roman", 14.25F);
->>>>>>> 8e53cb65e9fb173a4b6820f69aebfb09ac884a82
->>>>>>> Stashed changes
+
+
             NumberOfFunds.Location = new Point(12, 309);
             NumberOfFunds.Name = "NumberOfFunds";
             NumberOfFunds.ReadOnly = true;
@@ -104,15 +103,13 @@
             // 
             // JustTextTextbox1
             // 
-<<<<<<< Updated upstream
+
             JustTextTextbox1.Font = new Font("Times New Roman", 18F, FontStyle.Bold);
-=======
-<<<<<<< HEAD
+
             JustTextTextbox1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
-=======
+
             JustTextTextbox1.Font = new Font("Times New Roman", 18F, FontStyle.Bold);
->>>>>>> 8e53cb65e9fb173a4b6820f69aebfb09ac884a82
->>>>>>> Stashed changes
+
             JustTextTextbox1.Location = new Point(12, 268);
             JustTextTextbox1.Name = "JustTextTextbox1";
             JustTextTextbox1.ReadOnly = true;
@@ -122,15 +119,13 @@
             // 
             // JustTextTextbox2
             // 
-<<<<<<< Updated upstream
+
             JustTextTextbox2.Font = new Font("Times New Roman", 18F, FontStyle.Bold);
-=======
-<<<<<<< HEAD
+
             JustTextTextbox2.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
-=======
+
             JustTextTextbox2.Font = new Font("Times New Roman", 18F, FontStyle.Bold);
->>>>>>> 8e53cb65e9fb173a4b6820f69aebfb09ac884a82
->>>>>>> Stashed changes
+
             JustTextTextbox2.Location = new Point(659, 268);
             JustTextTextbox2.Name = "JustTextTextbox2";
             JustTextTextbox2.ReadOnly = true;
@@ -140,15 +135,13 @@
             // 
             // Investment
             // 
-<<<<<<< Updated upstream
+
             Investment.Font = new Font("Times New Roman", 14.25F);
-=======
-<<<<<<< HEAD
+
             Investment.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
-=======
+
             Investment.Font = new Font("Times New Roman", 14.25F);
->>>>>>> 8e53cb65e9fb173a4b6820f69aebfb09ac884a82
->>>>>>> Stashed changes
+
             Investment.Location = new Point(659, 315);
             Investment.Name = "Investment";
             Investment.Size = new Size(128, 33);
@@ -158,15 +151,13 @@
             // 
             // GambleVýsledek
             // 
-<<<<<<< Updated upstream
+
             GambleVýsledek.Font = new Font("Times New Roman", 18F, FontStyle.Bold);
-=======
-<<<<<<< HEAD
+
             GambleVýsledek.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
-=======
+
             GambleVýsledek.Font = new Font("Times New Roman", 18F, FontStyle.Bold);
->>>>>>> 8e53cb65e9fb173a4b6820f69aebfb09ac884a82
->>>>>>> Stashed changes
+
             GambleVýsledek.Location = new Point(229, 102);
             GambleVýsledek.Name = "GambleVýsledek";
             GambleVýsledek.ReadOnly = true;

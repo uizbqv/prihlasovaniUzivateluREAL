@@ -108,15 +108,7 @@
             label1.Location = new Point(370, 86);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-<<<<<<< Updated upstream
-            label1.Size = new Size(91, 15);
-=======
-<<<<<<< HEAD
             label1.Size = new Size(156, 25);
-=======
-            label1.Size = new Size(91, 15);
->>>>>>> 8e53cb65e9fb173a4b6820f69aebfb09ac884a82
->>>>>>> Stashed changes
             label1.TabIndex = 8;
             label1.Text = "REGISTER NOW ";
             // 
@@ -167,14 +159,16 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
-            // NotStrongEnoughLabel
+            // notStrongEnoughLabel
             // 
             notStrongEnoughLabel.AutoSize = true;
+            notStrongEnoughLabel.BackColor = Color.Transparent;
+            notStrongEnoughLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 238);
             notStrongEnoughLabel.ForeColor = Color.Red;
-            notStrongEnoughLabel.Location = new Point(529, 205);
+            notStrongEnoughLabel.Location = new Point(536, 207);
             notStrongEnoughLabel.Margin = new Padding(4, 0, 4, 0);
-            notStrongEnoughLabel.Name = "NotStrongEnoughLabel";
-            notStrongEnoughLabel.Size = new Size(163, 15);
+            notStrongEnoughLabel.Name = "notStrongEnoughLabel";
+            notStrongEnoughLabel.Size = new Size(234, 21);
             notStrongEnoughLabel.TabIndex = 17;
             notStrongEnoughLabel.Text = "Password isn't strong enough";
             notStrongEnoughLabel.Visible = false;

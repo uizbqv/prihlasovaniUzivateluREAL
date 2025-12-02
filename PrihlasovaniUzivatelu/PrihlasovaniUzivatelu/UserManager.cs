@@ -63,26 +63,8 @@ namespace PrihlasovaniUzivatelu
 
         public void Registration(string _username, string _password, string _passwordAgain)
         {
-            bool passwordControll;
-            bool bigChar = _password.Any(char.IsUpper);
 
-            bool smallChar = _password.Any(char.IsLower);
-
-            bool digit = _password.Any(char.IsDigit);
-
-            bool specialChar = _password.Any(ch => !char.IsLetterOrDigit(ch));
-
-            bool longEnough = _password.Length >= 8;
-
-            if (bigChar == true & smallChar == true & digit == true & specialChar == true & longEnough == true)
-            {
-                passwordControll = true;
-            }
-
-            else
-            {
-                passwordControll = false;
-            }
+            bool passwordControll = PasswordControl(_password);
 
             if (_password == _passwordAgain & passwordControll == true)
             {
@@ -94,18 +76,52 @@ namespace PrihlasovaniUzivatelu
                 RegisteredUser user = new RegisteredUser(username, hashedPassword, registrationTime);
                 IOManager.JsonConverterReg(user); //posle uzivatele k zapsani do 
             }
+            
+           
+
             else if (_password != _passwordAgain)
             {
                 _label.Visible = true; //ukaze ze hesla nejsou stejny
             }
 
-            else if (passwordControll == false) 
+            else if (passwordControll == false)
             {
                 _label2.Visible = true; //ukaze ze heslo není dostatečně bezpečné
-            } 
+            }
 
 
         }
+
+        public bool PasswordControl(string _password ) 
+        {
+            bool passwordControll;
+            bool bigChar = _password.Any(char.IsUpper); //zkontroluje že heslo obsahuje velké písmeno
+
+            bool smallChar = _password.Any(char.IsLower); //zkontroluje že heslo obsahuje malé písmeno
+
+            bool digit = _password.Any(char.IsDigit); //zkontroluje že heslo obsahuje číslici
+
+            bool specialChar = _password.Any(ch => !char.IsLetterOrDigit(ch)); //zkontroluje že heslo obsahuje speciální znak
+
+            bool longEnough = _password.Length >= 8; //obsahuje že heslo obsahuje 8 nebo více znaků
+
+            //podmínky definují zda je heslo vpořádku 
+
+            if (bigChar == true & smallChar == true & digit == true & specialChar == true & longEnough == true)
+            {
+                passwordControll = true;
+            }
+
+            else
+            {
+                passwordControll = false;
+            }
+
+            //vrátí true nebo false
+            return passwordControll;
+        }
+
+
 
         private static DateTime GetRegistrationDate()
         {
