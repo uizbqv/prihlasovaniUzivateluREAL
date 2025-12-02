@@ -35,10 +35,13 @@
             // 
             // button1
             // 
-            button1.Font = new Font("Times New Roman", 18F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            button1.Location = new Point(69, 117);
+            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
+            button1.BackgroundImageLayout = ImageLayout.Stretch;
+            button1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            button1.ForeColor = Color.Black;
+            button1.Location = new Point(117, 89);
             button1.Name = "button1";
-            button1.Size = new Size(173, 91);
+            button1.Size = new Size(133, 119);
             button1.TabIndex = 0;
             button1.Text = "Infinite Craftsino";
             button1.UseVisualStyleBackColor = true;
@@ -46,13 +49,17 @@
             // 
             // button2
             // 
-            button2.Font = new Font("Times New Roman", 18F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            button2.Location = new Point(382, 117);
+            button2.BackColor = Color.Transparent;
+            button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
+            button2.BackgroundImageLayout = ImageLayout.Stretch;
+            button2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            button2.ForeColor = Color.Black;
+            button2.Location = new Point(387, 89);
             button2.Name = "button2";
-            button2.Size = new Size(173, 91);
+            button2.Size = new Size(135, 119);
             button2.TabIndex = 1;
             button2.Text = "Users list";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // AdminScreen

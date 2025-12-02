@@ -73,37 +73,64 @@
             // 
             // RerollButton
             // 
+            RerollButton.BackColor = Color.Transparent;
+            RerollButton.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
+            RerollButton.ForeColor = Color.Black;
             RerollButton.Location = new Point(333, 275);
             RerollButton.Name = "RerollButton";
             RerollButton.Size = new Size(137, 57);
             RerollButton.TabIndex = 3;
             RerollButton.Text = "Reroll";
-            RerollButton.UseVisualStyleBackColor = true;
+            RerollButton.UseVisualStyleBackColor = false;
             RerollButton.Click += RerollButton_Click;
             // 
             // NumberOfFunds
             // 
+<<<<<<< Updated upstream
             NumberOfFunds.Font = new Font("Times New Roman", 14.25F);
+=======
+<<<<<<< HEAD
+            NumberOfFunds.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
+=======
+            NumberOfFunds.Font = new Font("Times New Roman", 14.25F);
+>>>>>>> 8e53cb65e9fb173a4b6820f69aebfb09ac884a82
+>>>>>>> Stashed changes
             NumberOfFunds.Location = new Point(12, 309);
             NumberOfFunds.Name = "NumberOfFunds";
             NumberOfFunds.ReadOnly = true;
-            NumberOfFunds.Size = new Size(100, 29);
+            NumberOfFunds.Size = new Size(100, 33);
             NumberOfFunds.TabIndex = 4;
             NumberOfFunds.Text = "1000";
             // 
             // JustTextTextbox1
             // 
+<<<<<<< Updated upstream
             JustTextTextbox1.Font = new Font("Times New Roman", 18F, FontStyle.Bold);
+=======
+<<<<<<< HEAD
+            JustTextTextbox1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
+=======
+            JustTextTextbox1.Font = new Font("Times New Roman", 18F, FontStyle.Bold);
+>>>>>>> 8e53cb65e9fb173a4b6820f69aebfb09ac884a82
+>>>>>>> Stashed changes
             JustTextTextbox1.Location = new Point(12, 268);
             JustTextTextbox1.Name = "JustTextTextbox1";
             JustTextTextbox1.ReadOnly = true;
-            JustTextTextbox1.Size = new Size(100, 35);
+            JustTextTextbox1.Size = new Size(100, 39);
             JustTextTextbox1.TabIndex = 5;
             JustTextTextbox1.Text = "Funds:";
             // 
             // JustTextTextbox2
             // 
+<<<<<<< Updated upstream
             JustTextTextbox2.Font = new Font("Times New Roman", 18F, FontStyle.Bold);
+=======
+<<<<<<< HEAD
+            JustTextTextbox2.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
+=======
+            JustTextTextbox2.Font = new Font("Times New Roman", 18F, FontStyle.Bold);
+>>>>>>> 8e53cb65e9fb173a4b6820f69aebfb09ac884a82
+>>>>>>> Stashed changes
             JustTextTextbox2.Location = new Point(659, 268);
             JustTextTextbox2.Name = "JustTextTextbox2";
             JustTextTextbox2.ReadOnly = true;
@@ -113,17 +140,33 @@
             // 
             // Investment
             // 
+<<<<<<< Updated upstream
             Investment.Font = new Font("Times New Roman", 14.25F);
+=======
+<<<<<<< HEAD
+            Investment.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
+=======
+            Investment.Font = new Font("Times New Roman", 14.25F);
+>>>>>>> 8e53cb65e9fb173a4b6820f69aebfb09ac884a82
+>>>>>>> Stashed changes
             Investment.Location = new Point(659, 315);
             Investment.Name = "Investment";
-            Investment.Size = new Size(128, 29);
+            Investment.Size = new Size(128, 33);
             Investment.TabIndex = 7;
             Investment.Text = "0";
             Investment.TextAlign = HorizontalAlignment.Right;
             // 
             // GambleVýsledek
             // 
+<<<<<<< Updated upstream
             GambleVýsledek.Font = new Font("Times New Roman", 18F, FontStyle.Bold);
+=======
+<<<<<<< HEAD
+            GambleVýsledek.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
+=======
+            GambleVýsledek.Font = new Font("Times New Roman", 18F, FontStyle.Bold);
+>>>>>>> 8e53cb65e9fb173a4b6820f69aebfb09ac884a82
+>>>>>>> Stashed changes
             GambleVýsledek.Location = new Point(229, 102);
             GambleVýsledek.Name = "GambleVýsledek";
             GambleVýsledek.ReadOnly = true;
@@ -133,6 +176,7 @@
             // 
             // button1
             // 
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 238);
             button1.Location = new Point(12, 402);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);

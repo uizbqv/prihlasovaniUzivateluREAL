@@ -37,8 +37,9 @@
             // button1
             // 
             button1.BackColor = Color.Transparent;
-            button1.Font = new Font("Times New Roman", 72F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Image = (Image)resources.GetObject("button1.Image");
+            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
+            button1.BackgroundImageLayout = ImageLayout.Stretch;
+            button1.Font = new Font("Times New Roman", 72F, FontStyle.Bold);
             button1.Location = new Point(122, 42);
             button1.Name = "button1";
             button1.Size = new Size(571, 303);
@@ -49,21 +50,21 @@
             // 
             // textBox1
             // 
-            textBox1.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 238);
             textBox1.Location = new Point(12, 351);
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
-            textBox1.Size = new Size(133, 32);
+            textBox1.Size = new Size(128, 33);
             textBox1.TabIndex = 1;
             textBox1.Text = "Mined Funds:";
             // 
             // Funds
             // 
-            Funds.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            Funds.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 238);
             Funds.Location = new Point(12, 389);
             Funds.Name = "Funds";
             Funds.ReadOnly = true;
-            Funds.Size = new Size(100, 26);
+            Funds.Size = new Size(100, 29);
             Funds.TabIndex = 2;
             Funds.Text = "0";
             // 
@@ -71,7 +72,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.Stone;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(800, 450);
             Controls.Add(Funds);
             Controls.Add(textBox1);

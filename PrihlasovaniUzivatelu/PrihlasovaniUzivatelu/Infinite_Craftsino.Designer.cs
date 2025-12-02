@@ -48,7 +48,7 @@
             // 
             // GambleVýsledek
             // 
-            GambleVýsledek.Font = new Font("Times New Roman", 18F, FontStyle.Bold);
+            GambleVýsledek.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
             GambleVýsledek.Location = new Point(225, 110);
             GambleVýsledek.Name = "GambleVýsledek";
             GambleVýsledek.ReadOnly = true;
@@ -58,6 +58,7 @@
             // 
             // RerollButton
             // 
+            RerollButton.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold);
             RerollButton.Location = new Point(329, 283);
             RerollButton.Name = "RerollButton";
             RerollButton.Size = new Size(137, 57);
@@ -94,37 +95,37 @@
             // 
             // JustTextTextbox1
             // 
-            JustTextTextbox1.Font = new Font("Times New Roman", 18F, FontStyle.Bold);
+            JustTextTextbox1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
             JustTextTextbox1.Location = new Point(12, 305);
             JustTextTextbox1.Name = "JustTextTextbox1";
             JustTextTextbox1.ReadOnly = true;
-            JustTextTextbox1.Size = new Size(100, 35);
+            JustTextTextbox1.Size = new Size(100, 39);
             JustTextTextbox1.TabIndex = 15;
             JustTextTextbox1.Text = "Funds:";
             // 
             // NumberOfFunds
             // 
-            NumberOfFunds.Font = new Font("Times New Roman", 14.25F);
+            NumberOfFunds.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
             NumberOfFunds.Location = new Point(12, 346);
             NumberOfFunds.Name = "NumberOfFunds";
             NumberOfFunds.ReadOnly = true;
-            NumberOfFunds.Size = new Size(100, 29);
+            NumberOfFunds.Size = new Size(100, 33);
             NumberOfFunds.TabIndex = 14;
             NumberOfFunds.Text = "100000";
             // 
             // Investment
             // 
-            Investment.Font = new Font("Times New Roman", 14.25F);
+            Investment.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
             Investment.Location = new Point(660, 352);
             Investment.Name = "Investment";
-            Investment.Size = new Size(128, 29);
+            Investment.Size = new Size(128, 33);
             Investment.TabIndex = 17;
             Investment.Text = "0";
             Investment.TextAlign = HorizontalAlignment.Right;
             // 
             // JustTextTextbox2
             // 
-            JustTextTextbox2.Font = new Font("Times New Roman", 18F, FontStyle.Bold);
+            JustTextTextbox2.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
             JustTextTextbox2.Location = new Point(660, 305);
             JustTextTextbox2.Name = "JustTextTextbox2";
             JustTextTextbox2.ReadOnly = true;
@@ -134,10 +135,10 @@
             // 
             // textBox1
             // 
-            textBox1.Font = new Font("Times New Roman", 18F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            textBox1.Location = new Point(12, 381);
+            textBox1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            textBox1.Location = new Point(12, 396);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(528, 35);
+            textBox1.Size = new Size(465, 33);
             textBox1.TabIndex = 18;
             textBox1.Text = "As The House you can only gain money not lose them";
             // 

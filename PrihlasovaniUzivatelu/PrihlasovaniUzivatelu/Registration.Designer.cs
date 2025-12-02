@@ -47,10 +47,13 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(379, 242);
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(383, 237);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(89, 15);
+            label4.Size = new Size(129, 21);
             label4.TabIndex = 13;
             label4.Text = "Password again";
             // 
@@ -65,10 +68,13 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(379, 187);
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(383, 181);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(57, 15);
+            label3.Size = new Size(82, 21);
             label3.TabIndex = 11;
             label3.Text = "Password";
             // 
@@ -83,20 +89,34 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(379, 132);
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(383, 127);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(60, 15);
+            label2.Size = new Size(80, 20);
             label2.TabIndex = 9;
             label2.Text = "Username";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(407, 38);
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(370, 86);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
+<<<<<<< Updated upstream
             label1.Size = new Size(91, 15);
+=======
+<<<<<<< HEAD
+            label1.Size = new Size(156, 25);
+=======
+            label1.Size = new Size(91, 15);
+>>>>>>> 8e53cb65e9fb173a4b6820f69aebfb09ac884a82
+>>>>>>> Stashed changes
             label1.TabIndex = 8;
             label1.Text = "REGISTER NOW ";
             // 
@@ -110,9 +130,10 @@
             // 
             // registerBUTTON
             // 
-            registerBUTTON.Location = new Point(407, 320);
+            registerBUTTON.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            registerBUTTON.Location = new Point(393, 296);
             registerBUTTON.Name = "registerBUTTON";
-            registerBUTTON.Size = new Size(75, 23);
+            registerBUTTON.Size = new Size(101, 38);
             registerBUTTON.TabIndex = 14;
             registerBUTTON.Text = "Register!";
             registerBUTTON.UseVisualStyleBackColor = true;
@@ -121,11 +142,13 @@
             // dontMatchLABEL
             // 
             dontMatchLABEL.AutoSize = true;
+            dontMatchLABEL.BackColor = Color.Transparent;
+            dontMatchLABEL.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 238);
             dontMatchLABEL.ForeColor = Color.Red;
-            dontMatchLABEL.Location = new Point(529, 264);
+            dontMatchLABEL.Location = new Point(536, 261);
             dontMatchLABEL.Margin = new Padding(4, 0, 4, 0);
             dontMatchLABEL.Name = "dontMatchLABEL";
-            dontMatchLABEL.Size = new Size(130, 15);
+            dontMatchLABEL.Size = new Size(185, 21);
             dontMatchLABEL.TabIndex = 15;
             dontMatchLABEL.Text = "Passwords don't match";
             dontMatchLABEL.Visible = false;
