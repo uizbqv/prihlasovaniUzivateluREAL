@@ -40,6 +40,7 @@
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             dontMatchLABEL = new Label();
             pictureBox1 = new PictureBox();
+            notStrongEnoughLabel = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -95,7 +96,7 @@
             label1.Location = new Point(407, 38);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(92, 15);
+            label1.Size = new Size(91, 15);
             label1.TabIndex = 8;
             label1.Text = "REGISTER NOW ";
             // 
@@ -128,6 +129,7 @@
             dontMatchLABEL.TabIndex = 15;
             dontMatchLABEL.Text = "Passwords don't match";
             dontMatchLABEL.Visible = false;
+            dontMatchLABEL.Click += dontMatchLABEL_Click;
             // 
             // pictureBox1
             // 
@@ -142,6 +144,19 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
+            // NotStrongEnoughLabel
+            // 
+            notStrongEnoughLabel.AutoSize = true;
+            notStrongEnoughLabel.ForeColor = Color.Red;
+            notStrongEnoughLabel.Location = new Point(529, 205);
+            notStrongEnoughLabel.Margin = new Padding(4, 0, 4, 0);
+            notStrongEnoughLabel.Name = "NotStrongEnoughLabel";
+            notStrongEnoughLabel.Size = new Size(163, 15);
+            notStrongEnoughLabel.TabIndex = 17;
+            notStrongEnoughLabel.Text = "Password isn't strong enough";
+            notStrongEnoughLabel.Visible = false;
+            notStrongEnoughLabel.Click += NotStrongEnoughLabel_Click;
+            // 
             // Registration
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -149,6 +164,7 @@
             BackgroundImage = Properties.Resources.Background;
             ClientSize = new Size(933, 519);
             ControlBox = false;
+            Controls.Add(notStrongEnoughLabel);
             Controls.Add(pictureBox1);
             Controls.Add(dontMatchLABEL);
             Controls.Add(registerBUTTON);
@@ -184,5 +200,6 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Label dontMatchLABEL;
         private PictureBox pictureBox1;
+        private Label notStrongEnoughLabel;
     }
 }

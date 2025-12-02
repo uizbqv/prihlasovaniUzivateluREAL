@@ -17,6 +17,7 @@ namespace PrihlasovaniUzivatelu
         {
             InitializeComponent();
             dontMatchLABEL.Visible = false; //nastavi text "passwords don't match" na neviditelny :3
+            notStrongEnoughLabel.Visible = false; //nastavi text "Password isn't strong enough" na neviditelny :)
             passwordBOX.Text = "";
             passwordBOX.PasswordChar = '■'; //nebudou videt pismena pri psani ale *
             passwordAgainBOX.Text = "";
@@ -39,7 +40,7 @@ namespace PrihlasovaniUzivatelu
                 MessageBox.Show("Your password can't be \"admin\"!");
                 return;
             }
-            UserManager um = new UserManager(dontMatchLABEL);
+            UserManager um = new UserManager(dontMatchLABEL, notStrongEnoughLabel);
             um.Registration(usernameREG, passwordREG, passwordAgainREG);
             if (passwordREG == passwordAgainREG)
             {
@@ -55,6 +56,16 @@ namespace PrihlasovaniUzivatelu
             this.Close();
             Form1? f1 = (Form1?)Application.OpenForms["Form1"];
             f1.WindowState = FormWindowState.Normal;
+        }
+
+        private void NotStrongEnoughLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dontMatchLABEL_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

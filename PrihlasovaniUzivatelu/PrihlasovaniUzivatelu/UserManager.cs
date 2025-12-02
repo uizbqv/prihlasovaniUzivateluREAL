@@ -10,10 +10,11 @@ namespace PrihlasovaniUzivatelu
     internal class UserManager
     {
         protected Label _label;
-        public UserManager(Label label) 
+        protected Label _label2;
+        public UserManager(Label label, Label label2) 
         {
             _label = label;
-            
+            _label2 = label2;
         }
 
 
@@ -55,10 +56,34 @@ namespace PrihlasovaniUzivatelu
 
 
         }
+
+
+       
+
+
         public void Registration(string _username, string _password, string _passwordAgain)
         {
-           
-            if (_password == _passwordAgain)
+            bool passwordControll;
+            bool bigChar = _password.Any(char.IsUpper);
+
+            bool smallChar = _password.Any(char.IsLower);
+
+            bool digit = _password.Any(char.IsDigit);
+
+            bool specialChar = _password.Any(ch => !char.IsLetterOrDigit(ch));
+
+            bool longEnough = _password.Length >= 8;
+
+            if (bigChar && smallChar && digit && specialChar && longEnough == true)
+            {
+                passwordControll = true;
+            }
+            else
+            {
+                passwordControll = false;
+            }
+
+            if (_password == _passwordAgain & passwordControll == true)
             {
                 //ziska promenne
                 string hashedPassword = PasswordHasher(_password);
@@ -68,11 +93,15 @@ namespace PrihlasovaniUzivatelu
                 RegisteredUser user = new RegisteredUser(username, hashedPassword, registrationTime);
                 IOManager.JsonConverterReg(user); //posle uzivatele k zapsani do 
             }
-            else
+            else if (_password != _passwordAgain)
             {
                 _label.Visible = true; //ukaze ze hesla nejsou stejny
             }
 
+            else if (passwordControll == false) 
+            {
+                _label2.Visible = true;
+            } 
 
 
         }
