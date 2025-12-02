@@ -74,10 +74,11 @@ namespace PrihlasovaniUzivatelu
 
             bool longEnough = _password.Length >= 8;
 
-            if (bigChar && smallChar && digit && specialChar && longEnough == true)
+            if (bigChar == true & smallChar == true & digit == true & specialChar == true & longEnough == true)
             {
                 passwordControll = true;
             }
+
             else
             {
                 passwordControll = false;
@@ -100,7 +101,7 @@ namespace PrihlasovaniUzivatelu
 
             else if (passwordControll == false) 
             {
-                _label2.Visible = true;
+                _label2.Visible = true; //ukaze ze heslo není dostatečně bezpečné
             } 
 
 
