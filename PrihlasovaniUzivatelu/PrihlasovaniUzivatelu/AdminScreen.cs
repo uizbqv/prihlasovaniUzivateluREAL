@@ -37,5 +37,10 @@ namespace PrihlasovaniUzivatelu
             r.Show();
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void AdminScreen_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -27,6 +27,7 @@ namespace PrihlasovaniUzivatelu
         public Form2()
         {
             InitializeComponent();
+
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -144,7 +145,12 @@ namespace PrihlasovaniUzivatelu
             Mining mine = new Mining(addBalance);
             mine.Show();
             MessageBox.Show("Craftsino will only take 99% of all emerald value you will mine (leaving you with 10 coins for each mine)");
-       
+
+        }
+
+        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

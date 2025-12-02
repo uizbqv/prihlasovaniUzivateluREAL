@@ -67,6 +67,7 @@
             Margin = new Padding(2);
             Name = "AdminScreen";
             Text = "Shush, don't show this to anyone else....";
+            FormClosed += AdminScreen_FormClosed;
             Load += AdminScreen_Load;
             ResumeLayout(false);
         }
