@@ -91,7 +91,7 @@ namespace PrihlasovaniUzivatelu
         private void GambleOutcome()
         {
             // House má vždy peníze (žádný odčítání)
-            
+
             NumberOfFunds.Text = balance.ToString();
 
             double win = 0;
@@ -116,5 +116,13 @@ namespace PrihlasovaniUzivatelu
 
             // aktualizace balansu
             NumberOfFunds.Text = balance.ToString();
-    }   }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            AdminScreen A1 = (AdminScreen)Application.OpenForms["AdminScreen"];
+            A1.WindowState = FormWindowState.Normal;
+        }
+    }
 }

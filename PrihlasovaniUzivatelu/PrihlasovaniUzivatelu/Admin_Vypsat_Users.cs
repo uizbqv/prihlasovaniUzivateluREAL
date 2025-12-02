@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace PrihlasovaniUzivatelu
 {
-    public partial class Admin_Vypsat_Users : Form
+    public partial class Button2 : Form
     {
-        public Admin_Vypsat_Users()
+        public Button2()
         {
             InitializeComponent();
         }
@@ -38,6 +38,14 @@ namespace PrihlasovaniUzivatelu
 
         private void UsersListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            AdminScreen A1 = (AdminScreen)Application.OpenForms["AdminScreen"];
+            A1.WindowState = FormWindowState.Normal;
 
         }
     }

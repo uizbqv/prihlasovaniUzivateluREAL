@@ -33,7 +33,7 @@ namespace PrihlasovaniUzivatelu
         private void button2_Click(object sender, EventArgs e)
         {
             //otevreni form Admin_Vypsat_Users
-            Admin_Vypsat_Users r = new Admin_Vypsat_Users();
+            Button2 r = new Button2();
             r.Show();
             this.WindowState = FormWindowState.Minimized;
         }

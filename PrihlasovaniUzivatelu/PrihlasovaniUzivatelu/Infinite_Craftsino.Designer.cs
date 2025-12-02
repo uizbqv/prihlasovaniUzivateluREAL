@@ -39,9 +39,11 @@
             Investment = new TextBox();
             JustTextTextbox2 = new TextBox();
             textBox1 = new TextBox();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureSlot3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureSlot2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureSlot1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // GambleVýsledek
@@ -139,12 +141,26 @@
             textBox1.TabIndex = 18;
             textBox1.Text = "As The House you can only gain money not lose them";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Cursor = Cursors.Hand;
+            pictureBox1.Image = Properties.Resources.backButton;
+            pictureBox1.Location = new Point(12, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(91, 30);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 19;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
             // Infinite_Craftsino
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox1);
             Controls.Add(textBox1);
             Controls.Add(Investment);
             Controls.Add(JustTextTextbox2);
@@ -160,6 +176,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureSlot3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureSlot2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureSlot1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -176,5 +193,6 @@
         private TextBox Investment;
         private TextBox JustTextTextbox2;
         private TextBox textBox1;
+        private PictureBox pictureBox1;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace PrihlasovaniUzivatelu
 {
-    partial class Admin_Vypsat_Users
+    partial class Button2
     {
         /// <summary>
         /// Required designer variable.
@@ -30,6 +30,8 @@
         {
             button1 = new Button();
             UsersListBox = new ListBox();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -53,17 +55,32 @@
             UsersListBox.TabIndex = 2;
             UsersListBox.SelectedIndexChanged += UsersListBox_SelectedIndexChanged;
             // 
-            // Admin_Vypsat_Users
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Cursor = Cursors.Hand;
+            pictureBox1.Image = Properties.Resources.backButton;
+            pictureBox1.Location = new Point(12, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(91, 30);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 17;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
+            // Button2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Commands;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox1);
             Controls.Add(UsersListBox);
             Controls.Add(button1);
-            Name = "Admin_Vypsat_Users";
+            Name = "Button2";
             Text = "Admin_Vypsat_Users";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -71,5 +88,6 @@
 
         private Button button1;
         private ListBox UsersListBox;
+        private PictureBox pictureBox1;
     }
 }
