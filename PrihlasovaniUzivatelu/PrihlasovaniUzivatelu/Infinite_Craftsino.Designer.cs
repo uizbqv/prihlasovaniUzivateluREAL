@@ -49,46 +49,51 @@
             // GambleVýsledek
             // 
             GambleVýsledek.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            GambleVýsledek.Location = new Point(225, 110);
+            GambleVýsledek.Location = new Point(321, 183);
+            GambleVýsledek.Margin = new Padding(4, 5, 4, 5);
             GambleVýsledek.Name = "GambleVýsledek";
             GambleVýsledek.ReadOnly = true;
-            GambleVýsledek.Size = new Size(351, 35);
+            GambleVýsledek.Size = new Size(500, 49);
             GambleVýsledek.TabIndex = 13;
             GambleVýsledek.TextAlign = HorizontalAlignment.Center;
             // 
             // RerollButton
             // 
             RerollButton.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold);
-            RerollButton.Location = new Point(329, 283);
+            RerollButton.Location = new Point(470, 472);
+            RerollButton.Margin = new Padding(4, 5, 4, 5);
             RerollButton.Name = "RerollButton";
-            RerollButton.Size = new Size(137, 57);
+            RerollButton.Size = new Size(196, 95);
             RerollButton.TabIndex = 12;
             RerollButton.Text = "Reroll";
             RerollButton.UseVisualStyleBackColor = true;
             // 
             // pictureSlot3
             // 
-            pictureSlot3.Location = new Point(463, 158);
+            pictureSlot3.Location = new Point(661, 263);
+            pictureSlot3.Margin = new Padding(4, 5, 4, 5);
             pictureSlot3.Name = "pictureSlot3";
-            pictureSlot3.Size = new Size(113, 106);
+            pictureSlot3.Size = new Size(161, 177);
             pictureSlot3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureSlot3.TabIndex = 11;
             pictureSlot3.TabStop = false;
             // 
             // pictureSlot2
             // 
-            pictureSlot2.Location = new Point(344, 158);
+            pictureSlot2.Location = new Point(491, 263);
+            pictureSlot2.Margin = new Padding(4, 5, 4, 5);
             pictureSlot2.Name = "pictureSlot2";
-            pictureSlot2.Size = new Size(113, 106);
+            pictureSlot2.Size = new Size(161, 177);
             pictureSlot2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureSlot2.TabIndex = 10;
             pictureSlot2.TabStop = false;
             // 
             // pictureSlot1
             // 
-            pictureSlot1.Location = new Point(225, 158);
+            pictureSlot1.Location = new Point(321, 263);
+            pictureSlot1.Margin = new Padding(4, 5, 4, 5);
             pictureSlot1.Name = "pictureSlot1";
-            pictureSlot1.Size = new Size(113, 106);
+            pictureSlot1.Size = new Size(161, 177);
             pictureSlot1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureSlot1.TabIndex = 9;
             pictureSlot1.TabStop = false;
@@ -96,29 +101,32 @@
             // JustTextTextbox1
             // 
             JustTextTextbox1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            JustTextTextbox1.Location = new Point(12, 305);
+            JustTextTextbox1.Location = new Point(17, 508);
+            JustTextTextbox1.Margin = new Padding(4, 5, 4, 5);
             JustTextTextbox1.Name = "JustTextTextbox1";
             JustTextTextbox1.ReadOnly = true;
-            JustTextTextbox1.Size = new Size(100, 39);
+            JustTextTextbox1.Size = new Size(141, 55);
             JustTextTextbox1.TabIndex = 15;
             JustTextTextbox1.Text = "Funds:";
             // 
             // NumberOfFunds
             // 
             NumberOfFunds.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            NumberOfFunds.Location = new Point(12, 346);
+            NumberOfFunds.Location = new Point(17, 577);
+            NumberOfFunds.Margin = new Padding(4, 5, 4, 5);
             NumberOfFunds.Name = "NumberOfFunds";
             NumberOfFunds.ReadOnly = true;
-            NumberOfFunds.Size = new Size(100, 33);
+            NumberOfFunds.Size = new Size(141, 45);
             NumberOfFunds.TabIndex = 14;
             NumberOfFunds.Text = "100000";
             // 
             // Investment
             // 
             Investment.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            Investment.Location = new Point(660, 352);
+            Investment.Location = new Point(943, 587);
+            Investment.Margin = new Padding(4, 5, 4, 5);
             Investment.Name = "Investment";
-            Investment.Size = new Size(128, 33);
+            Investment.Size = new Size(181, 45);
             Investment.TabIndex = 17;
             Investment.Text = "0";
             Investment.TextAlign = HorizontalAlignment.Right;
@@ -126,19 +134,21 @@
             // JustTextTextbox2
             // 
             JustTextTextbox2.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            JustTextTextbox2.Location = new Point(660, 305);
+            JustTextTextbox2.Location = new Point(943, 508);
+            JustTextTextbox2.Margin = new Padding(4, 5, 4, 5);
             JustTextTextbox2.Name = "JustTextTextbox2";
             JustTextTextbox2.ReadOnly = true;
-            JustTextTextbox2.Size = new Size(128, 35);
+            JustTextTextbox2.Size = new Size(181, 49);
             JustTextTextbox2.TabIndex = 16;
             JustTextTextbox2.Text = "Investment:";
             // 
             // textBox1
             // 
             textBox1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            textBox1.Location = new Point(12, 396);
+            textBox1.Location = new Point(17, 660);
+            textBox1.Margin = new Padding(4, 5, 4, 5);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(465, 33);
+            textBox1.Size = new Size(663, 45);
             textBox1.TabIndex = 18;
             textBox1.Text = "As The House you can only gain money not lose them";
             // 
@@ -147,9 +157,10 @@
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Cursor = Cursors.Hand;
             pictureBox1.Image = Properties.Resources.backButton;
-            pictureBox1.Location = new Point(12, 12);
+            pictureBox1.Location = new Point(17, 20);
+            pictureBox1.Margin = new Padding(4, 5, 4, 5);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(91, 30);
+            pictureBox1.Size = new Size(130, 50);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 19;
             pictureBox1.TabStop = false;
@@ -157,10 +168,10 @@
             // 
             // Infinite_Craftsino
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1143, 750);
             Controls.Add(pictureBox1);
             Controls.Add(textBox1);
             Controls.Add(Investment);
@@ -172,6 +183,8 @@
             Controls.Add(pictureSlot3);
             Controls.Add(pictureSlot2);
             Controls.Add(pictureSlot1);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4, 5, 4, 5);
             Name = "Infinite_Craftsino";
             Text = "House always wins";
             ((System.ComponentModel.ISupportInitialize)pictureSlot3).EndInit();

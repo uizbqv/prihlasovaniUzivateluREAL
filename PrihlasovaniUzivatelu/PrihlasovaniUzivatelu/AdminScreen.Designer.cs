@@ -39,9 +39,10 @@
             button1.BackgroundImageLayout = ImageLayout.Stretch;
             button1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
             button1.ForeColor = Color.Black;
-            button1.Location = new Point(117, 89);
+            button1.Location = new Point(167, 148);
+            button1.Margin = new Padding(4, 5, 4, 5);
             button1.Name = "button1";
-            button1.Size = new Size(133, 119);
+            button1.Size = new Size(190, 198);
             button1.TabIndex = 0;
             button1.Text = "Infinite Craftsino";
             button1.UseVisualStyleBackColor = true;
@@ -54,9 +55,10 @@
             button2.BackgroundImageLayout = ImageLayout.Stretch;
             button2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
             button2.ForeColor = Color.Black;
-            button2.Location = new Point(387, 89);
+            button2.Location = new Point(553, 148);
+            button2.Margin = new Padding(4, 5, 4, 5);
             button2.Name = "button2";
-            button2.Size = new Size(135, 119);
+            button2.Size = new Size(193, 198);
             button2.TabIndex = 1;
             button2.Text = "Users list";
             button2.UseVisualStyleBackColor = false;
@@ -64,15 +66,16 @@
             // 
             // AdminScreen
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(622, 338);
+            ClientSize = new Size(889, 563);
             Controls.Add(button2);
             Controls.Add(button1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(2);
             Name = "AdminScreen";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Shush, don't show this to anyone else....";
             FormClosed += AdminScreen_FormClosed;
             Load += AdminScreen_Load;

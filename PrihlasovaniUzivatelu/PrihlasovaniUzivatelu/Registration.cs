@@ -42,9 +42,9 @@ namespace PrihlasovaniUzivatelu
             }
             UserManager um = new UserManager(dontMatchLABEL, notStrongEnoughLabel);
             um.Registration(usernameREG, passwordREG, passwordAgainREG);
-            if (passwordREG == passwordAgainREG)
+            if (passwordREG == passwordAgainREG && um.PasswordControl(passwordREG))
             {
-                Form1? f1 = (Form1?)Application.OpenForms["Form1"]; //Application.OpenForms hledá všechny forms co jsou ted otevreny, ["Form1"] hleda presne form1
+                Form1? f1 = (Form1?)Application.OpenForms["Form1"];
                 f1.WindowState = FormWindowState.Normal;
                 this.Close();
             }
