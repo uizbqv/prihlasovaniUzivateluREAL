@@ -21,7 +21,7 @@ namespace PrihlasovaniUzivatelu
         double balance;
         double investment;
 
-        int S1, S2, S3;
+        int S1, S2, S3;//Sloty
 
 
         public Form2()
