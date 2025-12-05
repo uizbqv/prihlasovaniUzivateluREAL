@@ -154,7 +154,7 @@ namespace PrihlasovaniUzivatelu
         }
         private void SaveBalance()
         {
-            File.WriteAllText("balance.json", balance.ToString());
+            File.WriteAllText("balance.json", balance.ToString());//uloží balance do jsonu
         }
         private void LoadBalance()
         {
