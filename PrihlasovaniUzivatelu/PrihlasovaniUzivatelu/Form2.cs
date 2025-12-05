@@ -18,7 +18,7 @@ namespace PrihlasovaniUzivatelu
         Random rdm2 = new Random();
         Random rdm3 = new Random();
 
-        double balance = 1000;
+        double balance;
         double investment;
 
         int S1, S2, S3;
@@ -27,6 +27,7 @@ namespace PrihlasovaniUzivatelu
         public Form2()
         {
             InitializeComponent();
+            LoadBalance();
 
         }
 
@@ -102,6 +103,7 @@ namespace PrihlasovaniUzivatelu
         {
             //Tady se bude řešit výhra a prohra
             balance -= investment;
+            SaveBalance(); // Uložení balance po odečtenní peněz
             NumberOfFunds.Text = balance.ToString();
 
             if (S1 == S2 && S2 == S3)
@@ -110,6 +112,7 @@ namespace PrihlasovaniUzivatelu
                 double win = investment * 4;
 
                 balance += win;
+                SaveBalance(); // Uložení balance po výhře
                 NumberOfFunds.Text = balance.ToString();
 
                 GambleVýsledek.Text = "You won " + win.ToString() + " Dollars!";
@@ -121,6 +124,7 @@ namespace PrihlasovaniUzivatelu
                 double win = investment * 0.5;
 
                 balance += win;
+                SaveBalance(); // Uložení balance po Mid winu
                 NumberOfFunds.Text = balance.ToString();
 
                 GambleVýsledek.Text = "You won " + win.ToString() + " Dollars!";
@@ -136,6 +140,7 @@ namespace PrihlasovaniUzivatelu
         public void addBalance(double amount)
         {
             balance += amount;
+            SaveBalance();
             NumberOfFunds.Text = balance.ToString();
         }
         //Tlačítko pro otevření mininění
@@ -146,6 +151,35 @@ namespace PrihlasovaniUzivatelu
             mine.Show();
             MessageBox.Show("Craftsino will only take 99% of all emerald value you will mine (leaving you with 10 coins for each mine)");
 
+        }
+        private void SaveBalance()
+        {
+            File.WriteAllText("balance.json", balance.ToString());
+        }
+        private void LoadBalance()
+        {
+            if (File.Exists("balance.json"))
+            {
+                string text = File.ReadAllText("balance.json"); //přečte json
+
+                if (double.TryParse(text, out double loadedBalance))//jestli se to převede na double tak ho to načte
+                {
+                    balance = loadedBalance;
+                }
+
+                else //jestli ne tak to nastaví na default
+                {
+                    balance = 1000; 
+                }
+
+            }
+            else
+            {
+                balance = 1000; //prej jsem tam mněl dát druhý default idk proč ? ale funguje to
+                SaveBalance();
+            }
+
+            NumberOfFunds.Text = balance.ToString();
         }
 
         private void Form2_FormClosed(object sender, FormClosedEventArgs e)

@@ -12,12 +12,15 @@ namespace PrihlasovaniUzivatelu
         public string password { get; set; }
         public DateTime registrationTime { get; set; }
 
+        public double balance { get; set; } = 1000;
 
-        public RegisteredUser(string username, string password, DateTime registrationTime)
+
+        public RegisteredUser(string username, string password, DateTime registrationTime, double balance)
         {
             this.username = username;
             this.password = password;
             this.registrationTime = registrationTime;
+            this.balance = balance;
         }
 
     }

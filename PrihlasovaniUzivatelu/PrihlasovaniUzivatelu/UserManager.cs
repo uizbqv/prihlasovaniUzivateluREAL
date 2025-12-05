@@ -72,8 +72,9 @@ namespace PrihlasovaniUzivatelu
                 string hashedPassword = PasswordHasher(_password);
                 string username = _username;
                 DateTime registrationTime = GetRegistrationDate();
+                double balance = 1000; //DOUFÁM ŽE JSEM NIC NEPOSRAL -honzík
                 //vytvori noveho uzivatele
-                RegisteredUser user = new RegisteredUser(username, hashedPassword, registrationTime);
+                RegisteredUser user = new RegisteredUser(username, hashedPassword, registrationTime,balance);
                 IOManager.JsonConverterReg(user); //posle uzivatele k zapsani do 
             }
             
